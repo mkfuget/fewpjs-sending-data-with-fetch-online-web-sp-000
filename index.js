@@ -6,6 +6,8 @@ function submitData(name, email)
     email: email
   };
   const body = document.querySelector('body')
+  const h1 = document.createElement("h1");
+
   const configurationObject = {
     method: "POST",
     headers: {
@@ -19,7 +21,8 @@ function submitData(name, email)
       return response.json();
     })
     .then(function(object) {
-      body.appendChild(createTextNode(object));
+      h1.innerHTML = object
+      body.appendChild(h1);
     })
     .catch(function(error) {
       alert("Bad things! Ragnarok!");
