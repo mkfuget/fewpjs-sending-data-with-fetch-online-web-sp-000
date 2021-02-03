@@ -1,5 +1,5 @@
 // Add your code here
-function postData(name, email)
+function submitData(name, email)
 {
   let formData = {
     name: name,
