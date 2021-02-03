@@ -19,7 +19,7 @@ function submitData(name, email)
       return response.json();
     })
     .then(function(object) {
-      console.log(object);
+      body.appendChild(object);
     })
     .catch(function(error) {
       alert("Bad things! Ragnarok!");
