@@ -21,7 +21,7 @@ function submitData(name, email)
       return response.json();
     })
     .then(function(object) {
-      console.log(object)
+      console.log(object.id)
       h1.innerHTML = object.id
       body.appendChild(h1);
     })
