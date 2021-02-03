@@ -26,8 +26,8 @@ function submitData(name, email)
       body.appendChild(h1);
     })
     .catch(function(error) {
-      alert("Bad things! Ragnarok!");
-      console.log(error.message);
+      h1.innerHTML = error.message
+      body.appendChild(h1);
     })
 
 
