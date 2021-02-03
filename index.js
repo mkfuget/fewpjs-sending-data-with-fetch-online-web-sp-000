@@ -5,7 +5,7 @@ function submitData(name, email)
     name: name,
     email: email
   };
-
+  const body = document.querySelector('body')
   const configurationObject = {
     method: "POST",
     headers: {
