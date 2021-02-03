@@ -1,7 +1,7 @@
 // Add your code here
 function submitData(name, email)
 {
-  let formData = {
+  const formData = {
     name: name,
     email: email
   };
