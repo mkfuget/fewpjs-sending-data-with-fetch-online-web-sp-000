@@ -1,9 +1,9 @@
 // Add your code here
-function postData()
+function postData(name, email)
 {
   let formData = {
-    dogName: "Byron",
-    dogBreed: "Poodle"
+    name: name,
+    email: email
   };
 
   configurationObject = {
@@ -20,6 +20,11 @@ function postData()
     })
     .then(function(object) {
       console.log(object);
-    });
+    })
+    .catch(function(error) {
+      alert("Bad things! Ragnarok!");
+      console.log(error.message);
+    })
+
 
 }
